@@ -18,11 +18,7 @@ st.set_page_config(
 )
 
 # ─── 2. LOAD DATA ───────────────────────────────────────────────────────────
-@st.cache_data
-def load_data():
     df = pd.read_csv("EA.csv")
-    # ensure correct types
-    return df
 
 data = load_data()
 
